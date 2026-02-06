@@ -1,33 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 /* Base Styles */
+
 body {
-  color: royalblue;
   text-align: center;
-  background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  padding: 20px;
+  font-weight: 300;
+  background-color: rgb(255, 180, 87);
+  font-family: "SN Pro", sans-serif;
 }
 
-/* Typography */
+header {
+  color: rgb(139, 85, 13);
+  font-size: 40px;
+}
+
+
+h2 {
+  color: rgb(139, 85, 13);
+  font-size: 30px;
+}
+
+h3 {
+  color:rgb(139, 85, 13);
+}
+
+p {
+  color: rgb(139, 85, 13);
+}
+
+/* Navbar Styles */
+
+nav {
+  background-color: rgb(255, 180, 87);
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: rgb(139,  85, 13);
+  padding: 16px 24px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.15s ease-in-out;
+}
+
+nav a:hover {
+  background-color: rgb(139, 85, 13);
+  color: rgb(255, 255, 255);
+}
 
 /* Links & Accents */
 
+a:hover {
+  color: rgb(0, 27, 182);
+}
+
+.accent {
+  color: rgb(117, 67, 1);
+}
+
 /* Images */
+
+img {
+  border-radius: 16px;
+  max-width: 100%;
+}
 
 /* Hero Section */
 
+#hero-container {
+  padding: 10px;
+  height: 600px;
+}
+
+img.hero-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
 /* Main Content */
+
+main {
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+}
 
 /* About Section */
 
+.about-us p {
+  background-color: wheat;
+  border-radius: 16px;
+  padding: 20px;
+}
+
 /* Specials Section */
 
+.specials div.specials-list {
+  display: flex;
+  justify-content: center;
+  background-color: wheat;
+  border-radius: 16px;
+}
+
+article.special-offer {
+  padding: 15px;
+  border: 1px black;
+  margin: 5px;
+}
+
+p.price-now {
+  color: rgb(202, 138, 0);
+  text-decoration: underline;
+  transition: 0.25s ease-in-out;
+}
+
+p.price-now:hover {
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+}
+
+p.price-was {
+  text-decoration: line-through;
+}
+
 /* Visit Us Section */
+
+.visit-us div.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: wheat;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+address {
+  color: rgb(139, 85, 13);
+}
+
+address:hover {
+  color: rgb(90, 52, 2);
+  font-style: italic;
+}
 
 iframe {
   width: 100%;
   height: 350px;
+  border-radius: 16px;
 }
 
 /* Footer */
+
 footer {
   margin-top: 48px;
+  background-color: wheat;
+  border-radius: 16px;
 }
