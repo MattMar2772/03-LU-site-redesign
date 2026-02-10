@@ -18,7 +18,7 @@ header {
 
 h2 {
   color: rgb(139, 85, 13);
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3 {
@@ -50,8 +50,10 @@ nav li {
 
 nav a {
   text-decoration: none;
+  border-radius: 16px;
   display: block;
   color: rgb(139,  85, 13);
+  margin-right: 20px;
   padding: 16px 24px;
   background-color: rgb(255, 255, 255);
   transition: 0.15s ease-in-out;
@@ -95,12 +97,22 @@ img.hero-img {
 /* Main Content */
 
 main {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
+  margin: 20px 0px 20px 0px;
   border-radius: 16px;
 }
 
 /* About Section */
+
+.about-us {
+  display: block;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
 
 .about-us p {
   background-color: wheat;
@@ -108,19 +120,31 @@ main {
   padding: 20px;
 }
 
+.about-us p.thank-you {
+  background-color: white;
+  font-weight: 600;
+}
+
 /* Specials Section */
+
+.specials {
+  background-color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
 
 .specials div.specials-list {
   display: flex;
   justify-content: center;
-  background-color: wheat;
+  background-color: white;
   border-radius: 16px;
 }
 
 article.special-offer {
-  padding: 15px;
-  border: 1px black;
-  margin: 5px;
+  background-color: wheat;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
 }
 
 p.price-now {
@@ -138,7 +162,40 @@ p.price-was {
   text-decoration: line-through;
 }
 
+/* Testimonials Section */
+
+.testimonials {
+  background-color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.testimonials > div.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+article.review {
+  background-color: wheat;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+}
+
+article.review p.author {
+  font-weight: 600;
+}
+
 /* Visit Us Section */
+
+.visit-us {
+  background-color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
 
 .visit-us div.contact-info {
   display: flex;
@@ -147,8 +204,16 @@ p.price-was {
   background-color: wheat;
   border-radius: 16px;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.visit-us div.phone-block a {
+  color: rgb(139, 85, 13);
+  text-decoration: none;
+}
+
+.visit-us div.phone-block a:hover {
+  color: rgb(90, 52, 2);
 }
 
 address {
@@ -172,4 +237,56 @@ footer {
   margin-top: 48px;
   background-color: wheat;
   border-radius: 16px;
+  padding: 10px;
+}
+
+footer > div.footer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  gap: 2.5rem;
+  margin-bottom: 5px;
+}
+
+
+footer > div.footer-header a {
+  color: rgb(139,  85, 13);
+  text-decoration: none;
+}
+
+
+footer > div.footer-header a:hover {
+  color: rgb(90, 52, 2);
+}
+
+footer > div.footer-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  gap: 2.5rem;
+  margin-bottom: 5px;
+}
+
+footer > div.footer-body a {
+  color: rgb(139, 85, 13);
+}
+
+footer p,
+footer > div.footer-header,
+footer > div.footer-body {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .specials div.specials-list {
+    flex-direction: column;
+  }
+
+  .testimonials > div.reviews {
+    flex-direction: column;
+  }
 }
